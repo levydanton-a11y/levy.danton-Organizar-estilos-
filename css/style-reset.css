@@ -1,0 +1,29 @@
+/* style-reset.css */
+
+/* Remove margens e preenchimentos padrão e define o modelo de caixa (box-sizing) */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+/* Remove a sublinhado (underline) padrão de todos os links */
+a {
+    text-decoration: none;
+    color: inherit; /* Links herdam a cor do texto pai */
+}
+
+/* Reseta o estilo de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Reseta o estilo padrão de botões e campos de formulário */
+button, input, select, textarea {
+    font: inherit; /* Garante que fontes definidas globalmente sejam aplicadas */
+    border: none;
+    background: none;
+    outline: none; /* Remove o outline de foco para ser substituído por um estilo customizado */
+}

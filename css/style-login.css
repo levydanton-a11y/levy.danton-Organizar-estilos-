@@ -1,0 +1,85 @@
+/* style-login.css */
+
+/* Container que envolve o formulário (para dimensionamento e centralização) */
+.login-container {
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Estilo do Formulário de Login */
+.login-form {
+    background-color: white;
+    padding: var(--spacing-lg) * 1.5; /* 36px */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md); /* Espaçamento entre os elementos do formulário */
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+}
+
+/* Estilo do grupo de input (label + input) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--color-primary);
+}
+
+/* Estilos para "Lembrar-me" e "Esqueci minha senha" */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.remember-me input[type="checkbox"] {
+    /* Estilização customizada de checkbox se necessário */
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: var(--color-secondary);
+}
+
+/* Sobrescreve o botão primário para preencher a largura */
+.login-form .btn-primary {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+.register-link {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: var(--spacing-md);
+}

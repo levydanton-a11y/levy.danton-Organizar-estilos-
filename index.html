@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Login Organizado</title>
+
+    <link rel="stylesheet" href="css/style-reset.css">
+
+    <link rel="stylesheet" href="css/style-global.css">
+
+    <link rel="stylesheet" href="css/style-login.css">
+</head>
+<body>
+
+    <main class="login-container">
+        <form class="login-form">
+            <h1 class="form-title">Faça seu Login</h1>
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="********" required>
+            </div>
+
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Lembrar-me</label>
+                </div>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Entrar</button>
+
+            <p class="register-link">
+                Não tem conta? <a href="#">Cadastre-se aqui</a>
+            </p>
+        </form>
+    </main>
+
+</body>
+</html>

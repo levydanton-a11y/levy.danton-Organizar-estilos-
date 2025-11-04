@@ -1,0 +1,59 @@
+/* style-global.css */
+
+:root {
+    /* Definição de Variáveis CSS para Cores */
+    --color-primary: #007bff; /* Azul primário */
+    --color-secondary: #6c757d; /* Cinza secundário */
+    --color-background: #f8f9fa; /* Fundo claro */
+    --color-text: #343a40; /* Cor principal do texto */
+    --color-link: #0056b3; /* Cor dos links */
+    --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+    /* Definição de Variáveis CSS para Espaçamento */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+}
+
+/* Estilos de Tipografia e Fundo do Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh; /* Ocupa a altura total da viewport */
+    display: flex; /* Usado para centralizar o container de login */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos gerais para botões (Classe base) */
+.btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Variação de botão primário */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Tom mais escuro de azul */
+    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+}
+
+/* Estilos gerais de links */
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
